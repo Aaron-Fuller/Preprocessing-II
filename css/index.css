@@ -194,6 +194,11 @@ header nav {
   flex-direction: row;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav a {
   display: flex;
   justify-content: center;
@@ -282,4 +287,32 @@ header nav a {
   font-size: 16px;
   text-decoration: none;
   padding: 15px 32px;
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-destination {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.content-pick .destination {
+  align-self: center;
+  width: 100%;
 }

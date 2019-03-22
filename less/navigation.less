@@ -9,6 +9,8 @@ header{
     .flex(space-between; center);
     flex-direction: row;
 
+
+
     h1 {
         display: flex;
         width: 40%;
@@ -16,9 +18,16 @@ header{
     }
 
     nav {
+
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
         .flex(flex-end; center);
         flex-direction: row;
         width: 100%;
+
         
 
         a {
