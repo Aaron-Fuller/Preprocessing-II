@@ -1,1 +1,33 @@
 // Mixins in here
+.flex(@justify: center, @align: center){
+    display: flex;
+	justify-content: @justify;
+    align-items: @align;
+}
+
+.border-bottom {
+    border-bottom: 2px dashed #C0C0C0;
+}
+
+
+// Fancy Button
+
+.buttons (@border: none; @align: center){
+    border: @border;
+    text-align: @align;
+    width: 100%;
+    color: white;
+    background-color: @eastern-blue;
+    border-radius: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 32px;
+}
+
+
+
+// for testing 
+.border {
+    border: 1px solid red;
+}
+

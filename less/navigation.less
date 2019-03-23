@@ -1,1 +1,48 @@
 // Navigation Styles here
+
+// Used parametric mixin 2 times here and nested
+
+header{
+    border-bottom: 2px dashed #C0C0C0;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    .flex(space-between; center);
+    flex-direction: row;
+
+
+
+    h1 {
+        display: flex;
+        width: 40%;
+        
+    }
+
+    nav {
+
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        .flex(flex-end; center);
+        flex-direction: row;
+        width: 100%;
+
+        
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: black;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-right: 7%;
+        }
+
+    }
+}

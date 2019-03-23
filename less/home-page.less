@@ -5,8 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -27,6 +25,7 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,10 +41,13 @@
     width: 75%;
     margin: 0 auto 30px;
 
+
     img {
       border-radius: 10px;
     }
   }
+
+// My code starts here
 
   .content-pick {
     padding-top: 30px;
@@ -59,3 +61,52 @@
     }
   }
 }// home
+
+.my-custom {
+  .border-bottom;
+  padding-bottom: 10px;
+
+    img {
+      padding-bottom: 10px;
+      width: 100%;
+    }
+}
+
+// My fancy button thing; See mixins
+
+.btn {
+  .buttons();
+}
+
+//my escapes 
+.content-section {
+  @media @mobile {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+;
+.inverse-content {
+  @media @mobile {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+
+.content-destination {
+  @media @mobile {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+.content-pick {
+  @media @mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+    .destination{
+      align-self: center;
+      width: 100%;
+    }
+}
